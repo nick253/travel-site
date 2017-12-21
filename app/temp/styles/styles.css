@@ -738,7 +738,7 @@ a {
 @media (min-width: 800px) {
         .row__medium-4 {
             float: left;
-            width: 33.33%
+            width: 33.33%;
         }
 
         .row__medium-4-larger {
@@ -763,7 +763,7 @@ a {
 @media (min-width: 1010px) {
         .row__large-4 {
             float: left;
-            width: 33.33%
+            width: 33.33%;
         }
 
         .row__large-4-larger {
@@ -819,7 +819,7 @@ a {
 
 @media (min-width: 800px) {
         .row__b-margin-until-medium {
-            margin-bottom: 0-;
+            margin-bottom: 0;
         }
     }
 
@@ -1345,5 +1345,19 @@ a {
             padding: 12px 0;
             background-color: transparent
     }
+    }
+
+.reveal-item {
+    opacity: 0;
+    -webkit-transition: all 1.5s ease-out;
+    transition: all 1.5s ease-out;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+}
+
+.reveal-item--is-visible {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
     }
 
